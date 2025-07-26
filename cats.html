@@ -55,13 +55,26 @@
       <section>
         <h2> Cat Form</h2>
         <form action = 'https://freecatphotoapp.com/submit-cat-photo'> <!--form se usa para crear formularios-->
-          <label>
-            <input type="radio" name="info" id="indoor">Indoor
-          </label>
           <input type = 'text' name ='catphotourl' placeholder="cat photo URL" required><!--se usa para obtener info, 
           hay varios tipos y puedo ponerle el nombre que quiera, placeholder es como darle una guia o pista al usuario de que poner-->
           <button type="submit"> Submit  </button>
+          <fieldset>
+            <legend> Is your cat an indoor or outdoor cat? </legend>
+            <label>
+              <input type="radio" name="indoor-outdoor" id="indoor" value="indoor">Indoor<!--el id no se puede repetir y es un atributo-->
+            </label><!--si quiero que se pueda seleccionar una opcion les tengo que poner el mismo nombre en name-->
+            <label>
+              <input type="radio" name="indoor-outdoor" id="outdoor" value="outdoor">Outdoor<!--el texto en blanco es el texto del label y es necesario-->
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              What's your cat's personality?
+           <legend>What's your cat's personality?</legend>
+              <input type="checkbox" name='loving' id="loving" value="loving"> Loving
 
+            </legend>
+          </fieldset> 
         </form>
       </section>
         <!--Los img se les asigna la imagen mediante "<img src = 'linkdeimagen' "-->
