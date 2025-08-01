@@ -71,7 +71,14 @@
             <legend>
               What's your cat's personality?
            <legend>What's your cat's personality?</legend>
-              <input type="checkbox" name='loving' id="loving" value="loving"> Loving
+              <input type="checkbox" value="loving" name='personality' id="loving" value="loving"><!--While you won't notice this in the browser,
+              doing this makes it easier for a server to process your web form,
+              especially when there are multiple checkboxes.-->
+              <label for="loving">Loving</label>
+            <input id='lazy' type='checkbox' value="lazy" name='personality'>
+            <label for='lazy'>Lazy</label>
+            <input id ='energetic' type='checkbox' value='energetic' name='personality'>
+            <label for='energetic'>Energetic</label>
 
             </legend>
           </fieldset> 
