@@ -61,7 +61,7 @@
           <fieldset>
             <legend> Is your cat an indoor or outdoor cat? </legend>
             <label>
-              <input type="radio" name="indoor-outdoor" id="indoor" value="indoor">Indoor<!--el id no se puede repetir y es un atributo-->
+              <input checked type="radio" name="indoor-outdoor" id="indoor" value="indoor">Indoor<!--el id no se puede repetir y es un atributo-->
             </label><!--si quiero que se pueda seleccionar una opcion les tengo que poner el mismo nombre en name-->
             <label>
               <input type="radio" name="indoor-outdoor" id="outdoor" value="outdoor">Outdoor<!--el texto en blanco es el texto del label y es necesario-->
@@ -71,7 +71,7 @@
             <legend>
               What's your cat's personality?
            <legend>What's your cat's personality?</legend>
-              <input type="checkbox" value="loving" name='personality' id="loving" value="loving"><!--While you won't notice this in the browser,
+              <input checked type="checkbox" value="loving" name='personality' id="loving" value="loving"><!--While you won't notice this in the browser,
               doing this makes it easier for a server to process your web form,
               especially when there are multiple checkboxes.-->
               <label for="loving">Loving</label>
@@ -91,3 +91,6 @@
       </body>
     </html>
 </main>
+<footer>
+  
+</footer>
